@@ -1,43 +1,78 @@
 .feature {
-    display: flex;
+// Mobile screen 480px &
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
 
-&__item {
-    margin-left: 30px;
+// padding-top: 60px;
+// padding-bottom: 60px;
 
-    &:first-child {
-    margin-left: 0;
-    }
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+display: flex;
+flex-wrap: nowrap;
+}
 }
 
-&__item_pics {
-    display: flex;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    align-items: center;
-    background-color: $secondary-bg-color;
-    margin-bottom: 30px;
-    border-radius: 4px;
+.feature__item {
+// Mobile screen 480px &
+// gap: 30px;
+
+&:first-child {
+margin-left: 0;
 }
 
-&__item_title {
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 10px;
+// Tablets screen 768px &
+@media screen and (min-width: 768px) {
+flex-basis: calc((100% - 30px) / 2);
 }
 
-&__item_text {
-    color: $primary-text-color;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 0;
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+flex-basis: calc((100% - 30px) / 4)
 }
 
+}
+
+.feature__item_pics {
+display: flex;
+justify-content: center;
+width: 450px;
+height: 120px;
+align-items: center;
+background-color: $secondary-bg-color;
+margin-bottom: 30px;
+border-radius: 4px;
+
+// Tablets screen 768px &
+@media screen and (min-width: 768px) {
+width: 354px;
+}
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+width: 270px;
+}
+}
+
+.feature__item_title {
+color: $title-text-color;
+text-align: center;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.feature__item_text {
+color: $primary-text-color;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+margin-top: 0;
+margin-bottom: 0;
 }

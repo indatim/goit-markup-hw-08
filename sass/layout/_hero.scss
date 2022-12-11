@@ -1,35 +1,61 @@
 .hero {
-    text-align: center;
+// Mobile screen 480px &
+text-align: center;
 
-    padding-top: 200px;
-    padding-bottom: 200px;
-    
-    background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../images/hero-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1600px;
-    height: 600px;
+padding-top: 118px;
+padding-bottom: 118px;
 
-    margin-left: auto;
-    margin-right: auto;
+background-image: linear-gradient(
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+url(../images/hero-image.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 480px;
+height: 400px;
+
+margin-left: auto;
+margin-right: auto;
+
+// Tablets screen 768px &
+@media screen and (min-width: 768px) {
+padding-top: 118px;
+padding-bottom: 118px;
+
+max-width: 768px;
+height: 400px; 
+}
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+padding-top: 200px;
+padding-bottom: 200px;
+
+max-width: 1600px;
+height: 600px; 
+}
 }
 
 .hero__title {
-    color: #FFFFFF;
+// Mobile screen 480px &
+color: #FFFFFF;
 
-    font-weight: 900;
-    font-size: 44px;
+font-weight: 900;
+font-size: 26px;
 
-    line-height: 1.3;
-    text-align: center;
-    letter-spacing: 0.06em;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.06em;
 
-    text-transform: uppercase;
+text-transform: uppercase;
 
-    width: 696px;
+width: 360px;
 
-    margin: 0 auto 30px;
+margin: 0 auto 30px;
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+font-size: 44px;
+width: 696px;
+}   
 }

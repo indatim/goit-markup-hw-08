@@ -32,7 +32,7 @@ height: 80px;
 
 // Desktop screen 1200px &
 @media screen and (min-width: 1200px) {
-width: 1200px;
+width: 1600px;
 height: 80px;
 }
 }
@@ -101,7 +101,7 @@ margin-left: 50px;
         
 // Desktop screen 1200px &
 @media screen and (min-width: 1200px) {
-margin-left: 93px;
+margin-left: 50px;
 }
 }
     
@@ -131,7 +131,7 @@ align-items: center;
     
 .header__contacts_item {
 // Mobile screen 480px &
-margin-left: 50px;
+margin-left: 0px;
 
 // Tablets screen 768px &
 @media screen and (min-width: 768px) {
@@ -173,9 +173,6 @@ letter-spacing: 0.02em;
         
 display: inline-flex;
         
-padding-top: 10px;
-padding-bottom: 10px;
-        
 text-decoration: none;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -216,6 +213,16 @@ margin-bottom: -1px;
         
 border-radius: 2px;
 background-color: $accent-color;
+
+// Tablets screen 768px &
+@media screen and (min-width: 768px) {
+margin-bottom: -32px;
+}
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+margin-bottom: 0px;
+}
 }
     
 .contacts_link {
