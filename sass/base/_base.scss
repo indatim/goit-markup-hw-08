@@ -1,0 +1,27 @@
+body {
+    background-color: $primary-white-color;
+    color: $primary-text-color;
+    font-family: $primary-font;
+    margin: 0;
+}
+
+.background {
+    background-color: #2F303A;
+}
+
+.li {
+    padding: 0;
+    margin: 0;
+}
+
+.ul {
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
