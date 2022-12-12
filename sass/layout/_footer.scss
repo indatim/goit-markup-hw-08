@@ -1,55 +1,36 @@
 .footer {
-    background-color: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
+background-color: #2F303A;
+padding-top: 60px;
+padding-bottom: 60px;
+}
 
-&__block {
+.footer__block {
+display: flex;
+flex-wrap: wrap;
+align-items: baseline;
+justify-content: center;
+gap: 60px;
+
+// Tablets screen 768px &
+@media screen and (min-width: 768px) {
+gap: 60px 160px;
+}
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+flex-wrap: nowrap;
+gap: 0;
+}
+}
+
+// .footer__block_main {
+// display: block;
+// }
+
+.footer__logo {
+    color: #FFFFFF;
     display: flex;
-    align-items: baseline;
-}
-
-&__block_main {
-    display: block;
-}
-
-&__address {
-    text-decoration: none;
-    font-style: normal; 
-}
-
-&__address_text {
-    display: inline-block;
-    text-decoration: none;
-    font-style: normal;
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 1.71;
-    margin-bottom: 9px;
-}
-
-&__address_mail {
-    display: inline-block;
-    text-decoration: none;
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    line-height: 1.71;
-    margin-bottom: 9px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&__address_tel {
-    display: inline-block;
-    text-decoration: none;
-    font-style: normal;
-    color:rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    line-height: 1.71;
-}
-
-&__logo {
-    color: #FFFFFF;
-    display: inline-block;
+    justify-content: center;
     
     font-family: $secondary-font;
     font-weight: 700;
@@ -61,18 +42,68 @@
     text-decoration: none;
 
     margin-bottom: 20px;
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+    display: inline-block;
+    align-self: center;
+}
 }
 
-&__logo_text {
+.footer__logo_text {
         color: #2196F3;
     }
 
-&__social_block {
-    display: block;
+.footer__nav {
+display: block;
+text-align: center;
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+text-align: left;
+}
+}
+
+.footer__address_text {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 9px;
+}
+
+.footer__address_mail {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__address_tel {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer__social_block {
+    display: inline;
     width: 206px;
     height: 80px;
+    margin-left: 0px;
+
+    // Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
     margin-left: 70px;
-}
+    }
 }
 
 .link {
@@ -84,76 +115,3 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
-
-
-
-// &__social_title {
-//     display: inline-flex;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     color: $primary-white-color;
-//     text-transform: uppercase;
-//     margin: 0;
-// }
-
-// &__social_media {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin-top: 20px;
-// }
-
-// &__joinus {
-//     padding: 0;
-//     margin-right: 10px;
-// }
-
-// &__joinus_social-item {
-//     padding: 0;
-//     margin-right: 10px;
-    
-//     &:last-child {
-//     margin-right: 0;
-// }
-// }
-
-// &__joinus_social-link {
-//     // justify-content: center;
-//     // align-items: center;
-//     height: 44px;
-//     width: 44px;
-//     border-radius: 50%;
-//     background-color: rgba(255, 255, 255, 0.1); 
-//     color: $primary-white-color;
-//     cursor: pointer;
-    
-//     &:hover, :focus {
-//     background-color: $accent-color;
-//     color: $primary-white-color;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// }
-
-
-// &__joinus_social-icon {
-//     fill: currentColor;
-// }
-
-// &__nav {
-//     margin: 0;
-// }
-
-
-
-// }
-
-// .link {
-//     text-decoration: none;
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-//     &:hover, :focus {
-//     color: $accent-color;
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }

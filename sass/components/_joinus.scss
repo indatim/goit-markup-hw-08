@@ -1,14 +1,21 @@
 .joinus {
 
     &__title {
-        display: inline-flex;
+        display: block;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         color: $primary-white-color;
         text-transform: uppercase;
+        text-align: center;
         margin: 0;
+        
+        // Desktop screen 1200px &
+        @media screen and (min-width: 1200px) {
+        text-align: left;
+        }
+
     }
     
     &__media {
