@@ -96,15 +96,30 @@
   <div class="container"><h2 class="worklist__title">Чим ми займаємося</h2>
   <ul class="worklist list">
     <li>
-      <img class="worklist__img" src="./images/box1.jpg" width="370" alt="box1">
+      <img
+      srcset="./images/box1x1.jpg 1x, ./images/box1x2.jpg 2x" 
+      class="worklist__img"
+      src="./images/box1x1.jpg"
+      width="370"
+      alt="box1">
       <p class="worklist__label">Десктопні додатки</p>
     </li>
     <li>
-      <img class="worklist__img" src="./images/box2.jpg" width="370" alt="box2">
+      <img
+      srcset="./images/box2x1.jpg 1x, ./images/box2x2.jpg 2x" 
+      class="worklist__img"
+      src="./images/box2x1.jpg"
+      width="370"
+      alt="box2">
       <p class="worklist__label">Мобільні додатки</p>
     </li>
     <li>
-      <img class="worklist__img" src="./images/box3.jpg" width="370" alt="box3">
+      <img
+      srcset="./images/box3x1.jpg 1x, ./images/box3x2.jpg 2x" 
+      class="worklist__img"
+      src="./images/box3x1.jpg"
+      width="370"
+      alt="box3">
       <p class="worklist__label">Дизайнерські рішення</p>
     </li>
   </ul></div>
@@ -114,10 +129,29 @@
   <div class="container"><h2 class="family__title">Наша команда</h2>
   <ul class="family list">
     <li class="family__card">
+      <picture>
+        <source srcset="
+        ./images/igor_1200x1.jpg 1x,
+        ./images/igor_1200x2.jpg 2x
+        "
+        media="(min-width:1200px)"
+        />
+        <source srcset="
+        ./images/igor_768x1.jpg 1x,
+        ./images/igor_768x2.jpg 2x
+        "
+        media="(min-width: 768px)"
+        />
+        <source srcset="
+        ./images/igor_480x1.jpg 1x,
+        ./images/igor_480x2.jpg 2x
+        "
+        media="(max-width: 767px)"
+        />
       <img class="family__photo"
-        src="./images/ihor.jpg"
-        width="270"
+        src="./images/igor_1200x1.jpg"
         alt="Фото першого співробітника">
+      </picture>
       <div class="team"><h3 class="family__name">Ігор Дем'яненко</h3>
       <p class="family__jobtitle">Product Designer</p></div>
       <ul class="family__media list">
@@ -136,10 +170,29 @@
       </ul>
     </li>
     <li class="family__card">
+      <picture>
+        <source srcset="
+        ./images/olha_1200x1.jpg 1x,
+        ./images/olha_1200x2.jpg 2x
+        "
+        media="(min-width:1200px)"
+        />
+        <source srcset="
+        ./images/olha_768x1.jpg 1x,
+        ./images/olha_768x2.jpg 2x
+        "
+        media="(min-width: 768px)"
+        />
+        <source srcset="
+        ./images/olha_480x1.jpg 1x,
+        ./images/olha_480x2.jpg 2x
+        "
+        media="(max-width: 767px)"
+        />
       <img class="family__photo"
-        src="./images/olha.jpg"
-        width="270"
+        src="./images/olha_1200x1.jpg"
         alt="Фото другого співробітника">
+      </picture>
       <div class="team"><h3 class="family__name">Ольга Рєпіна</h3>
       <p class="family__jobtitle">Frontend Developer</p></div>
       <ul class="family__media list">
@@ -158,10 +211,29 @@
       </ul>
     </li>
     <li class="family__card">
+       <picture>
+        <source srcset="
+        ./images/mykola_1200x1.jpg 1x,
+        ./images/mykola_1200x2.jpg 2x
+        "
+        media="(min-width:1200px)"
+        />
+        <source srcset="
+        ./images/mykola_768x1.jpg 1x,
+        ./images/mykola_768x2.jpg 2x
+        "
+        media="(min-width: 768px)"
+        />
+        <source srcset="
+        ./images/mykola_480x1.jpg 1x,
+        ./images/mykola_480x2.jpg 2x
+        "
+        media="(max-width: 767px)"
+        />
       <img class="family__photo"
-        src="./images/mykola.jpg"
-        width="270"
+        src="./images/mykola_1200x1.jpg"
         alt="Фото третього співробітника">
+      </picture>
       <div class="team"><h3 class="family__name">Микола Тарасов</h3>
       <p class="family__jobtitle">Marketing</p></div>
       <ul class="family__media list">
@@ -180,10 +252,29 @@
       </ul>
     </li>
     <li class="family__card">
+      <picture>
+        <source srcset="
+        ./images/mykhailo_1200x1.jpg 1x,
+        ./images/mykhailo_1200x2.jpg 2x
+        "
+        media="(min-width:1200px)"
+        />
+        <source srcset="
+        ./images/mykhailo_768x1.jpg 1x,
+        ./images/mykhailo_768x2.jpg 2x
+        "
+        media="(min-width: 768px)"
+        />
+        <source srcset="
+        ./images/mykhailo_480x1.jpg 1x,
+        ./images/mykhailo_480x2.jpg 2x
+        "
+        media="(max-width: 767px)"
+        />
       <img class="family__photo"
-        src="./images/mykhailo.jpg"
-        width="270"
+        src="./images/mykhailo_1200x1.jpg"
         alt="Фото четвертого співробітника">
+      </picture>
       <div class="team"><h3 class="family__name">Михайло Єрмаков</h3>
       <p class="family__jobtitle">UI Designer</p></div>
       <ul class="family__media list">

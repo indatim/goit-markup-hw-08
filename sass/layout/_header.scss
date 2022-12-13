@@ -1,12 +1,12 @@
 // Mobile screen 480px &
 .header {
 border-bottom: 1px solid #ECECEC;
-width: 480px;
+width: auto;
 height: 60px;
 
 // Tablets screen 768px &
 @media screen and (min-width: 768px) {
-width: 768px;
+width: auto;
 height: 80px;
 }
 

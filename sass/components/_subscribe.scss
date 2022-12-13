@@ -83,7 +83,7 @@
     justify-content: center;
     align-items: center;
     padding-left: 12px;
-    margin-left: 16px;
+    margin-left: 0px;
     background-color: $accent-color;
     color: $primary-white-color;
     border: none;
@@ -105,6 +105,11 @@
     &:hover, &:focus {
     color: $primary-white-color;
     background-color: #006ec7;
+    }
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+    margin-left: 16px;
 }
 }
 

@@ -54,12 +54,12 @@ body {
 
 .header {
   border-bottom: 1px solid #ECECEC;
-  width: 480px;
+  width: auto;
   height: 60px;
 }
 @media screen and (min-width: 768px) {
   .header {
-    width: 768px;
+    width: auto;
     height: 80px;
   }
 }
@@ -1315,7 +1315,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 12px;
-  margin-left: 16px;
+  margin-left: 0px;
   background-color: #2196F3;
   color: #FFFFFF;
   border: none;
@@ -1336,6 +1336,11 @@ li {
 .subscribe__button:hover, .subscribe__button:focus {
   color: #FFFFFF;
   background-color: #006ec7;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__button {
+    margin-left: 16px;
+  }
 }
 
 .subscribe__icon {
