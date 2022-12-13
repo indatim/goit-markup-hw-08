@@ -22,6 +22,7 @@
 }
 
 .modal {
+    // Mobile screen 480px &
     position: absolute;
     padding: 40px;
 
@@ -35,6 +36,17 @@
     border-radius: 4px;
 
     background-color: $primary-white-color;
+
+    // Tablets screen 768px &
+@media screen and (min-width: 768px) {
+    width: 450px;
+}
+
+// Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+    width: 528px;
+}
+
 }
 
 .modal .close-button {
