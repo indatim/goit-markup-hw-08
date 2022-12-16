@@ -4,11 +4,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    // Desktop screen 1200px &
-@media screen and (min-width: 1200px) {
+ // Desktop screen 1200px &
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-}
+    }
 }
 
 .clients__title {
@@ -19,7 +19,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     // Desktop screen 1200px &
 @media screen and (min-width: 1200px) {
@@ -27,48 +27,52 @@
     }
 }
 
-.clients__list {
-display: flex;
-flex-wrap: wrap;
-gap: 30px;
-justify-content: center;
-align-items: center;
+.client__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    // Desktop screen 1200px &
+@media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+}
 }
 
 .clients__item {
     display: flex;
     justify-content: center;
-    width: 210px;
     height: 92px;
+    flex-basis: calc((100% - 30px) / 2);
     align-items: center;
     border: 1px solid ;
     color: $icons-color;
     border-color: $border-color;
+    cursor: pointer;
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Tablets screen 768px &
 @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px) / 3);
-    width: 226px;
-    height: 92px;
-    
+    flex-basis: calc((100% - 60px) / 3); 
 }
 
 // Desktop screen 1200px &
 @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 90px) / 6);
-    width: 170px;
-    height: 92px;
+    flex-basis: calc((100% - 60px) / 6);
 }
-    
+
     &:hover, &:focus {
     border-color: $accent-color;
     color: $accent-color;
 }
-	
 }
 
-.clients__icon {
+.clients__item_link {
+    color: currentColor;
+}
+
+.clients__logo {
     fill: currentColor;
 }
