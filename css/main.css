@@ -291,7 +291,7 @@ body {
 .contacts_link {
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: -webkit-inline-box;
@@ -313,6 +313,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contacts_link {
+    font-size: 14px;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
   }

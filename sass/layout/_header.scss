@@ -238,15 +238,12 @@ margin-bottom: 0px;
 .contacts_link {
 color: $primary-text-color;
 font-weight: 500;
-font-size: 14px;
+font-size: 12px;
             
 line-height: 1.14;
 letter-spacing: 0.02em;
             
 display: inline-flex;
-            
-// padding-top: 10px;
-// padding-bottom: 10px;
             
 text-decoration: none;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -263,6 +260,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Desktop screen 1200px &
 @media screen and (min-width: 1200px) {
+font-size: 14px;
+line-height: 1.14;
 padding-top: 32px;
 padding-bottom: 32px;
 }
